@@ -1,0 +1,8 @@
+/* Import following CURL command in Postman
+Change get url as desired
+    <host:port>/feed/<PageNo>
+*/
+
+curl --location --request GET 'http://localhost:8082/feed/0' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic YWRtaW46YWRtaW4xMjM='

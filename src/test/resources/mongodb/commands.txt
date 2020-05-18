@@ -1,0 +1,8 @@
+- Start mongodb demon,
+        - docker run -d -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=pwdadmin mongo
+- Run cli
+        - docker run -it --rm mongo \
+        mongo -u admin \
+        -p pwdadmin \
+        --authenticationDatabase admin \
+        test

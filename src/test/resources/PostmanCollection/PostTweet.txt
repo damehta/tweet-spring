@@ -1,0 +1,11 @@
+/* Import following CURL command in Postman
+Change Post message as desired
+    "userId":"<Any User>","message":"<Any Message>"
+*/
+
+curl --location --request PUT 'http://localhost:8082/tweet' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic YWRtaW46YWRtaW4xMjM=' \
+--data-raw '{
+	"userId":"admin","message":"Second Msg"
+}'
